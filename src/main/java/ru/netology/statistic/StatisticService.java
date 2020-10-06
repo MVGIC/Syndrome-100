@@ -8,12 +8,15 @@ public class StatisticService {
      * @param incomes - array of incomes
      * @return - index of first max value
      */
+
+
     public long findMax(long[] incomes) {
-       int maxIndex = 0;
-       for (int i = 1; i < incomes.length; i++) {
-           if (incomes[maxIndex] < incomes[i]);
-       }
-        return maxIndex +1;
+        long currentMax = incomes[0];
+        for (long income : incomes) {
+            if (currentMax < income) {
+            }
+        }
+        return currentMax;
     }
 }
 
